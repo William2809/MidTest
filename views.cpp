@@ -10,7 +10,7 @@ int main(){
 	for(int i=0; i<n; i++){
 		scanf("%d %s %d - %[^\n]", &date, month, &year, name);getchar();
 		
-		int total = date + totalMonth((char*)month) + (year * 365);
+		int total = date + (totalMonth((char*)month)*30) + (year * 365);
 		pushMid(date, (char*)month, year, (char*)name, total);
 	}
 	int temp =n-m;
