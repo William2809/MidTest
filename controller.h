@@ -176,7 +176,7 @@ void printLinkedList(){
     curr = head;
 
     while(curr){
-        printf("%d %s %d %s\n", curr->date, curr->month, curr->year, curr->name);
+        printf("%d %s %d - %s\n", curr->date, curr->month, curr->year, curr->name);
         curr = curr->next;
     }
 }
